@@ -1,0 +1,57 @@
+%% tutotrial of page numbering: https://www.overleaf.com/learn/latex/Page_numbering
+%% \pagenumbering{<numberstyle>}
+%% <numberstyle>:
+%% <arabic> : use Arabic numerals (1, 2, 3, ...)
+%% <alph>   : use lowercase letters (a, b, c, ...)
+%% <Alph>   : use uppercase letters (A, B, C, ...)
+%% <roman>  : use lowercase roman numerals (i, ii, iii, ...)
+%% <Roman>  : use uppercase roman numerals (I, II, III, ...)
+
+%% \frontmatter : Pages after this command and before the command \mainmatter, 
+%%                will be numbered with lowercase Roman numerals.
+%% \mainmatter  : This will restart the page counter and change the style to Arabic numbers.
+
+
+
+%% tutotrial of headers and footers: https://www.overleaf.com/learn/latex/Headers_and_footers
+
+%% \pagestyle{<style>}    : sets the style of the current page, and all subsequent pages, to <style>
+%% \thispagestyle{<style>}: sets style of the current page only to <style>
+%% style:
+%% <empty>      : no headers or footers on pages
+%% <plain>      : no page headers, footers consist of a centered page number
+%% <headings>   : no footers, headers contains class-specific information and page number
+%% <myheadings> : no footers, headers contains page number and user-supplied information
+%% <package>    : use the specified package
+
+
+%% \usepackage[⟨options⟩]{fancyhdr}
+%% \pagestyle{fancyhdr}
+%% \fancyhf[locations]{content}
+%% [locations]:
+%% O - E     : to specify Odd or Even pages
+%% H - F     : to indicate Header or Footer
+%% L - C - R : for the Left, Centre and Right “zone” of the header or footer
+
+
+%% \headrulewidth : macro to define the thickness of a line under the header
+%% \footrulewidth : macro to define the thickness of a line above the footer
+%% \headruleskip  : macro to define the distance between the line and the header text (only available since version 4.0)
+%% \footruleskip  : macro to define the distance between the line and the footer text
+%% \headrule      : macro to completely redefine header rules (lines)
+%% \footrule      : macro to completely redefine footer rules (lines)
+%% \headwidth     : a length parameter that defines the total width of the headers and footers
+
+
+%% \usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyhf[EHL]{eqweqw}
+\fancyhf[EHC]{eqweqw}
+\fancyhf[EHR]{eqweqwe}
+
+
+\fancyhf[OFL]{\thepage}
+\fancyhf[OFC]{\thepage}
+\fancyhf[OFR]{\thepage}
