@@ -1,9 +1,34 @@
-% ************************** Thesis Abstract *****************************
-% Use `abstract' as an option in the document class to print only the titlepage and the abstract.
+% To include only the Title and the abstract pages for submission to BoGS
+
+    %\renewcommand{\tableofcontents}{}
+    %\renewcommand{\listoffigures}{}
+    %\renewcommand{\listoftables}{}
+    %\renewcommand{\printnomencl}{}
+    %\renewcommand{\printnomencl}[1][2]{}
+    %\renewcommand{\printthesisindex}{}
+    %\renewcommand{\bibname}{}
+    %\renewcommand{\bibliography}[1]{\thispagestyle{empty}}
+
+% ******************************** Abstract ************************************
+% The abstract environment puts a large, bold, centered "Abstract" label at
+% the top of the page. Defines both abstract and separate abstract environment
+\newenvironment{abstract} {
+  \clearpage %\cleardoublepage
+  \setsinglecolumn
+  \section*{\centering \Large Abstract}
+  \thispagestyle{empty}
+}
+
+
 \begin{abstract}
 
 
+
+
 This is where you write your abstract ...
+
+
+
 
 
 \end{abstract}

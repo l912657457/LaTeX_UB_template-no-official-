@@ -7,6 +7,16 @@
 \usepackage{siunitx}
 \usepackage{ifthen}
 \usepackage{ifpdf}
+
+
+\usepackage{lscape}   % Supports Landscape Layout
+\usepackage{setspace} % Define line spacing in paragraph
+\usepackage{calc}     % calculate vertical spacing
+
+% ************************* Conditional Statements *****************************
+\usepackage{ifthen}   % Conditional statements
+\usepackage{ifpdf}    % Check for pdfLaTeX
+\usepackage{ifxetex}  % XeLaTeX
 %% This will add the units
 %----------------------------------------------
 \newcommand{\nomunit}[1]{%
@@ -21,12 +31,8 @@
 %% nomenclatures Grouping
 %% https://ctan.org/search?phrase=etoolbox
 \usepackage{etoolbox}
+\usepackage{makeidx}
 
-\input{preambles/dedecation/pre_dedication}
-
-\input{preambles/acknowledgements/pre_acknowledgement}
-
-\input{preambles/abstract/pre_abstract}
 
 %% nomenclatures package
 \input{preambles/nomenclatures/pre_nomenclatures}
@@ -70,7 +76,7 @@
 
 \usepackage[utf8]{inputenc}
 
-\usepackage[onehalfspacing]{setspace}
+\usepackage{setspace}
 
 
 %% 中文

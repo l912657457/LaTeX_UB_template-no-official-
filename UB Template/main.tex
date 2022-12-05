@@ -1,27 +1,83 @@
-\documentclass{article}
+\documentclass[a4paper,12pt,times,numbered,print,index, oneside]{template/UBtemplate}
+%% parametre of UBtemplate
+
+% *************************** Pre-defined Options ******************************
+% `a4paper'(The University of Cambridge PhD thesis guidelines recommends a page
+% size a4 - default option) or `a5paper': A5 Paper size is also allowed as per
+% the Cambridge University Engineering Deparment guidelines for PhD thesis
+
+
+% `11pt' or `12pt'(default): Font Size 10pt is NOT recommended by the University
+% guidelines
+
+
+
+% `oneside' or `twoside'(default): Printing double side (twoside) or single
+% side.
+% *************************** Pre-defined Options ******************************
+
+
+% ******************************* Font Option **********************************
+% `times' : Times font with math support. (The Cambridge University guidelines
+%           recommend using times)
+
+
+
+% `fourier': Utopia Font with Fourier Math font (Font has to be installed)
+%            It's a free font.
+
+
+
+% `customfont': Use `customfont' option in the document class and load the
+% package in the preamble.tex
+% ******************************* Font Option **********************************
+
+
+% ****************************** Draft Option **********************************
+% `draftclassic': For draft mode without loading any images (same as draft in book)
+
+
+% `draft': Special draft mode with line numbers, images, and water mark with
+% timestamp and custom text. Position of the text can also be modified.
+% ****************************** Draft Option **********************************
+
+
+
+% *********************** Define a Print/Online Version ************************
+% `print': Use `print' for print version with appropriate margins and page
+% layout. Leaving the options field blank will activate Online version.
+% *********************** Define a Print/Online Version ************************
+
+
 \input{preambles/packages.tex}
 
 
 
 \title{My Title}
 \subtitle{My Subtitle}
-\author{my name}
+\author{Junjie Li, Manuel Liu Wang}
 \dept{Department of Mathematics and Computer Science}
 \university{University of Barcelona}
-\crest{\includegraphics[width=0.2\textwidth]{preambles/static/ub_logo/ub_logo_3.png}}
-\degreetitle{Doctor of Philosophy}
+\crest{\includegraphics[width=0.2\textwidth]{preambles/static/ub_logo/ub_logo_4.png}}
+
+
+\supervisor{Prof. A.B. Supervisor\newline
+            Prof. C.D. Supervisor}
+            
+            
+\advisor{Dr. A. Advisor\newline 
+         Dr. B. Advisor}
+         
+\renewcommand{\submissiontext}{change the default text here if needed}
+\degreetitle{Doctor of Computer Science}
 \college{Operating System}
-\degreedate{September 2014}
-\subject{LaTeX} \keywords{{LaTeX} {PhD Thesis} {Engineering} {University of
-Cambridge}}
+\degreedate{Desembre 2022}
 
-
-
+\subject{LaTeX} \keywords{{LaTeX} {Thesis} {Engineering} {University of Barcelona}}
 
 \begin{document}
 
 
-\maketitle
 
 %% ******************* Personal zone ******************* %%
 \include{personal/header_footer}
@@ -50,13 +106,16 @@ Cambridge}}
 %% ******************* Contents ********************* %%
 
 
-\section* {Introduction}
+\section{An Introduction}
 
 
 Write your introduction here.
 
 
  
+ 
+ The \Gls{latex} typesetting markup language is specially suitable 
+for documents that include \gls{maths}. Give
  
 
 ...
@@ -68,12 +127,28 @@ Write your introduction here.
     \label{taula}
 \end{figure}%
 
+\section{Example 1}
 
+
+\section{Example 2}
 
 ...
 
+\section{Exanple of Indices of terms}
 
-\section* {conclusion}
+In this example, several keywords\index{keywords} will be 
+used which are important and deserve to appear in the 
+Index\index{Index}.
+
+Terms like generate\index{generate} and some\index{others} 
+will also show up. Terms in the index can also be 
+nested \index{Index!nested}
+
+
+\section{Exanple biobliography}
+
+
+\chapter{conclusion}
 
 Write your conclusion here.
 %% ******************* Contents ********************* %%
@@ -85,9 +160,9 @@ Write your conclusion here.
 
 %% ******************* optional zone ******************* %%
 
-\include{optional/Appendix/appendix}
 \include{optional/biobliography/bibliography}
 \include{optional/references/references}
+\include{optional/Appendix/appendix}
 \include{optional/indices_of_terms}
 
 %% ******************* optional zone ******************* %%
