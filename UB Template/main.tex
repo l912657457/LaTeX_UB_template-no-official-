@@ -1,80 +1,63 @@
-
-
-
 \documentclass{article}
-
-
-
-
 \input{preambles/packages.tex}
-\input{preambles/images}
-\input{preambles/command_prompt}
 
+
+
+\title{My Title}
+\subtitle{My Subtitle}
+\author{my name}
+\dept{Department of Mathematics and Computer Science}
+\university{University of Barcelona}
+\crest{\includegraphics[width=0.2\textwidth]{preambles/static/ub_logo/ub_logo_3.png}}
+\degreetitle{Doctor of Philosophy}
+\college{Operating System}
+\degreedate{September 2014}
+\subject{LaTeX} \keywords{{LaTeX} {PhD Thesis} {Engineering} {University of
+Cambridge}}
 
 
 
 
 \begin{document}
 
+
+\maketitle
+
+%% ******************* Personal zone ******************* %%
 \include{personal/header_footer}
 \include{personal/tapa_cover}
+%% ******************* Personal zone ******************* %%
 
 
 
+
+
+%% ******************* optional zone ******************* %%
+\include{optional/dedication}
+\include{optional/declaration}
+\include{optional/acknowledgement}
 \include{optional/abstract}
-
-\include{optional/acknowledgements}
-
-
 \include{optional/index}
-
-
-\begin{enumerate}
-  \item La portada
-  \item abstract(option)
-  \item index(option)
-  \item INTRODUCTION
-  \item CHAPTER 1
-  \item CHAPTER 2
-  \item conclusion
-  \item Bibliography(option)
-  \item APPENDIX A(option)
-  \item APPENDIX B(option)
-  \item references(option)
-\end{enumerate}
-
-\newpage
-1
-\newpage
-2
-\newpage
-3
-\newpage
-4
-\newpage
-5
-\newpage
-6
-\newpage
-7
-\newpage
-8
-\newpage
-9
+\include{optional/glossaries}
+\include{optional/nomenclature}
+%% ******************* optional zone ******************* %%
 
 
 
 
 
 
+%% ******************* Contents ********************* %%
 
 
-\section{Introduction}
+\section* {Introduction}
 
 
-....
+Write your introduction here.
+
+
  
-\section{Funcionalitat a implementar}
+ 
 
 ...
 
@@ -90,18 +73,26 @@
 ...
 
 
-\section{Conclusió}
+\section* {conclusion}
 
-...
-
-\include{optional/appendix}
-
-
-\include{optional/bibliography}
+Write your conclusion here.
+%% ******************* Contents ********************* %%
 
 
 
-\bibliography{reference} 
+
+
+
+%% ******************* optional zone ******************* %%
+
+\include{optional/Appendix/appendix}
+\include{optional/biobliography/bibliography}
+\include{optional/references/references}
+\include{optional/indices_of_terms}
+
+%% ******************* optional zone ******************* %%
+
+
 
 
 

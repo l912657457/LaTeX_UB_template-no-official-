@@ -1,14 +1,48 @@
 %% all packetge https://ctan.org/
 
 %% tapa_cover
+                                                                                                
 
+%% units
+\usepackage{siunitx}
+\usepackage{ifthen}
+\usepackage{ifpdf}
+%% This will add the units
+%----------------------------------------------
+\newcommand{\nomunit}[1]{%
+\renewcommand{\nomentryend}{\hspace*{\fill}#1}}
+%----------------------------------------------
 
 
 %% header & footer
 \usepackage{fancyhdr} %% 页眉页脚 apply with geometry
 
 
+%% nomenclatures Grouping
+%% https://ctan.org/search?phrase=etoolbox
+\usepackage{etoolbox}
 
+\input{preambles/dedecation/pre_dedication}
+
+\input{preambles/acknowledgements/pre_acknowledgement}
+
+\input{preambles/abstract/pre_abstract}
+
+%% nomenclatures package
+\input{preambles/nomenclatures/pre_nomenclatures}
+
+%% glossaries package
+\input{preambles/glossaries/pre_glossaries}
+
+%% appendix
+\input{preambles/appendix/pre_appendix}
+
+%% Bibliography
+\input{preambles/bibliography/pre_bibliography}
+
+
+%% indices of terms:
+\input{preambles/indices_of_terms/pre_indices_of_terms}
 
 
 %% 几乎必须
@@ -32,10 +66,12 @@
 \usepackage{ragged2e} %%段落对齐方式
 
 
-\usepackage{biblatex} %Imports biblatex package
+
+
 \usepackage[utf8]{inputenc}
 
 \usepackage[onehalfspacing]{setspace}
+
 
 %% 中文
 
@@ -102,3 +138,12 @@
 \usemintedstyle{vs}
 
 \addtolength{\topmargin}{-10.54448pt}
+
+
+
+
+
+
+
+\input{preambles/images}
+\input{preambles/command_prompt}
