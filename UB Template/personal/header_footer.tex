@@ -44,14 +44,50 @@
 
 
 %% \usepackage{fancyhdr}
-\pagestyle{fancy}
+%%\pagestyle{fancy}
 
-\fancyhf{}
-\fancyhf[EHL]{eqweqw}
-\fancyhf[EHC]{eqweqw}
-\fancyhf[EHR]{eqweqwe}
+%%\fancyhf{}
+%%\fancyhf[EHL]{eqweqw}
+%%\fancyhf[EHC]{eqweqw}
+%%\fancyhf[EHR]{eqweqwe}
 
 
-\fancyhf[OFL]{\thepage}
-\fancyhf[OFC]{\thepage}
-\fancyhf[OFR]{\thepage}
+%%\fancyhf[OFL]{\thepage}
+%%\fancyhf[OFC]{\thepage}
+%%\fancyhf[OFR]{\thepage}
+
+
+% Style 1: Sets Page Number at the Top and Chapter/Section Name on LE/RO
+\fancypagestyle{PageStyle1}{
+  \renewcommand{\chaptermark}[1]{\markboth{##1}{}}
+  \renewcommand{\sectionmark}[1]{\markright{\thesection\ ##1\ }}
+  
+  \fancyhf{}
+  \fancyhead[RO]{\nouppercase \rightmark\hspace{0.25em} | 
+    \hspace{0.25em} \bfseries{\thepage}}
+  \fancyhead[LE]{ {\bfseries\thepage} \hspace{0.25em} | 
+    \hspace{0.25em} \nouppercase \leftmark}
+}
+
+% Style 2: Sets Page Number at the Bottom with Chapter/Section Name on LO/RE
+\fancypagestyle{PageStyle2}{
+  \renewcommand{\chaptermark}[1]{\markboth{##1}{}}
+  \renewcommand{\sectionmark}[1]{\markright{\thesection\ ##1}}
+  \fancyhf{}
+  \fancyhead[RO]{\bfseries\nouppercase \rightmark}
+  \fancyhead[LE]{\bfseries \nouppercase \leftmark}
+  \fancyfoot[C]{\thepage}
+}
+
+%Default Style: Sets Page Number at the Top (LE/RO) with Chapter/Section Name
+\fancypagestyle{PageStyle3}{
+    \renewcommand{\chaptermark}[1]{\markboth {##1}{}}
+    \renewcommand{\sectionmark}[1]{\markright{\thesection\ ##1}}
+    \fancyhf{}
+    \fancyhead[LO]{\nouppercase \rightmark}
+    \fancyhead[LE,RO]{\bfseries\thepage}
+    \fancyhead[RE]{\nouppercase \leftmark}
+}
+
+\setlength{\headheight}{14.5pt}
+\pagestyle{PageStyle3}
