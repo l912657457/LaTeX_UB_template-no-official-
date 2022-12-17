@@ -5,8 +5,11 @@
 \newenvironment{acknowledgements}{
     \clearpage %\cleardoublepage
     \setsinglecolumn
-    \section*{\centering \Large Acknowledgements}
-    \thispagestyle{empty}
+    
+    \addcontentsline{toc}{chapter}{Acknowledgements}
+    \chapter*{\centering \Large Acknowledgements}
+    
+    \thispagestyle{plain}
 }
 
 

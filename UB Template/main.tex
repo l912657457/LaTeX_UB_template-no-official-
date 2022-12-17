@@ -9,24 +9,33 @@
 % <Option5>: Print/Online Version
 % <Option6>: Draft Option
 
-% *************************** Pre-defined Options ******************************
-% `a4paper'(default option) or `a5paper'
 
 
-%  <10pt>, <11pt> or <12pt>(default)
+% *************************** Page Options ******************************
+% <a4paper>(default option) or 
+% <a5paper>
+% *************************** Page Options ******************************
 
 
-% <oneside> (default) or <twoside>: Printing double side (twoside) or single side.
-% *************************** Pre-defined Options ******************************
+
+% ******************************* Font size Option **********************************
+%  <12pt>(default),  <11pt> or <10pt>
+% ******************************* Font size Option **********************************
+
+
+
+% *************************** page side Options ******************************
+%<oneside> (default) or 
+%<twoside>: Printing double side (twoside) or single side.
+% *************************** page side Options ******************************
+
 
 
 % ******************************* Font Option **********************************
-% <times> : Times font with math support.
-
+% <times> (default) : Times font with math support.
 
 % <fourier>: Utopia Font with Fourier Math font (Font has to be installed)
 %            It's a free font.
-
 
 % <customfont>: Use `customfont' option in the document class and load the
 % package in the preamble.tex
@@ -34,21 +43,26 @@
 
 
 % *********************** Define a Print/Online Version ************************
-% <print>: Use `print' for print version with appropriate margins and page
+% <print>(default): Use `print' for print version with appropriate margins and page
 % layout. 
+
 % <online> : activate Online version.
 % *********************** Define a Print/Online Version ************************
 
 
 % ****************************** Draft Option **********************************
-% `draft': Special draft mode with line numbers, images, and water mark with
+% <NoDraft>(default): Special draft mode with line numbers, images, and water mark with
 % timestamp and custom text. Position of the text can also be modified.
 
-% `NoDraft(default)': Special draft mode with line numbers, images, and water mark with
+% <draft>: Special draft mode with line numbers, images, and water mark with
 % timestamp and custom text. Position of the text can also be modified.
 % ****************************** Draft Option **********************************
 
+
+
 \input{preambles/packages.tex}
+
+
 
 \begin{document}
 
@@ -60,7 +74,7 @@
 %% ******************* Personal zone ******************* %%
 
 
-
+\frontmatter %Use lowercase Roman numerals for page numbers
 
 
 %% ******************* optional zone ******************* %%
@@ -69,6 +83,7 @@
 \include{optional/acknowledgement}
 \include{optional/abstract}
 \include{optional/index}
+\mainmatter % Now Use Arabic numerals for page numbers
 \include{optional/glossaries}
 \include{optional/nomenclature}
 %% ******************* optional zone ******************* %%
@@ -81,17 +96,20 @@
 %% ******************* Contents ********************* %%
 
 
-\section{An Introduction}
+\chapter{Getting started}
 
+\section{An Introduction}
 
 Write your introduction here.
 
+\section{Tutorial}
 
- 
- 
- The \Gls{latex} typesetting markup language is specially suitable 
-for documents that include \gls{maths}. Give
- 
+....
+
+\section{Usage}
+
+
+
 
 ...
 
@@ -102,14 +120,82 @@ for documents that include \gls{maths}. Give
     \label{taula}
 \end{figure}%
 
-\section{Example 1}
-
-
-\section{Example 2}
 
 ...
 
-\section{Exanple of Indices of terms}
+
+
+
+
+
+\chapter{My second Chapter}
+
+
+\section{Images exemple}
+
+...
+
+\section{Math exemple}
+
+...
+
+\section{Table exemple}
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+
+
+\chapter{My third chapter}
+
+Write your conclusion here.
+
+
+
+
+
+
+\chapter{Glossary tutorial}
+
+ The \Gls{latex} typesetting markup language is specially suitable 
+for documents that include \gls{maths}. Give
+
+
+
+\chapter{bibliograp Tutorial}
+
+Using \texttt{biblatex} you can display a bibliography divided into sections, depending on citation type. 
+Let's cite! Einstein's journal paper \cite{einstein} and Dirac's book \cite{dirac} are physics-related items. 
+Next, \textit{The \LaTeX\ Companion} book \cite{latexcompanion}, Donald Knuth's website \cite{knuthwebsite}, \textit{The Comprehensive Tex Archive Network} (CTAN) \cite{ctan} are \LaTeX-related items; but the others, Donald Knuth's items, \cite{knuth-fa,knuth-acp} are dedicated to programming.
+
+
+
+\chapter{Exanple of Indices of terms}
 
 In this example, several keywords\index{keywords} will be 
 used which are important and deserve to appear in the 
@@ -118,20 +204,6 @@ Index\index{Index}.
 Terms like generate\index{generate} and some\index{others} 
 will also show up. Terms in the index can also be 
 nested \index{Index!nested}
-
-
-\section{Exanple biobliography}
-
-
-\chapter{conclusion}
-
-Write your conclusion here.
-
-\chapter{bibliograp test}
-
-Using \texttt{biblatex} you can display a bibliography divided into sections, depending on citation type. 
-Let's cite! Einstein's journal paper \cite{einstein} and Dirac's book \cite{dirac} are physics-related items. 
-Next, \textit{The \LaTeX\ Companion} book \cite{latexcompanion}, Donald Knuth's website \cite{knuthwebsite}, \textit{The Comprehensive Tex Archive Network} (CTAN) \cite{ctan} are \LaTeX-related items; but the others, Donald Knuth's items, \cite{knuth-fa,knuth-acp} are dedicated to programming.
 
 %% ******************* Contents ********************* %%
 

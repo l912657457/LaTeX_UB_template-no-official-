@@ -15,8 +15,11 @@
 \newenvironment{abstract} {
   \clearpage %\cleardoublepage
   \setsinglecolumn
-  \section*{\centering \Large Abstract}
-  \thispagestyle{empty}
+  
+  \addcontentsline{toc}{chapter}{Abstract}
+  \chapter*{\centering \Large Abstract}
+  
+  \thispagestyle{plain}
 }
 
 
