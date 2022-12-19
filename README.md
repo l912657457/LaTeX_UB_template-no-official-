@@ -1,4 +1,4 @@
-# <div align="center"> Latex_UB_template-no-official- </div>
+# <div align="center"> Latex UB template (no-official) </div>
 
 > This template was created by Junjie Li, the primary contributor, and Manuel Liu Wang, the secondary contributor, both UB students majoring in computer science. It is not an official template from UB.
 
