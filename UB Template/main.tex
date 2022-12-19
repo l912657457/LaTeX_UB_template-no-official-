@@ -12,21 +12,22 @@
 
 
 % *************************** Page Options ******************************
-% <a4paper>(default option) or 
-% <a5paper>
+% <a4paper> default size of the page
+% <a5paper> secondary option for the size of the page
 % *************************** Page Options ******************************
 
 
 
-% ******************************* Font size Option **********************************
-%  <12pt>(default),  <11pt> or <10pt>
-% ******************************* Font size Option **********************************
+% ******************************* Font size Option ****************************
+%<12pt> letter size at its standard 
+%You can change the number (12) according to the size you want for your document.
+% ******************************* Font size Option ****************************
 
 
 
 % *************************** page side Options ******************************
-%<oneside> (default) or 
-%<twoside>: Printing double side (twoside) or single side.
+%<oneside> (default) 
+%<twoside>: Printing double side (twoside) or single side. Adds one blank page between pages.
 % *************************** page side Options ******************************
 
 
@@ -43,32 +44,26 @@
 
 
 % *********************** Define a Print/Online Version ************************
-% <print>(default): Use `print' for print version with appropriate margins and page
-% layout. 
+% <print>(default): Use `print' for print version with appropriate margins and page layout.
 
-% <online> : activate Online version.
+% <online> : activate Online version, the links won't have that blue color.
 % *********************** Define a Print/Online Version ************************
 
 
 % ****************************** Draft Option **********************************
-% <NoDraft>(default): Special draft mode with line numbers, images, and water mark with
-% timestamp and custom text. Position of the text can also be modified.
+% <NoDraft>(default): Special draft mode with line numbers, images, and water mark with timestamp and custom text. Position of the text can also be modified.
 
 % <draft>: Special draft mode with line numbers, images, and water mark with
 % timestamp and custom text. Position of the text can also be modified.
 % ****************************** Draft Option **********************************
 
-
-
 \input{preambles/packages.tex}
-
-
-
 \begin{document}
 
 
 
 %% ******************* Personal zone ******************* %%
+%You can change your cover and footer style
 \include{personal/tapa_cover}
 \include{personal/header_footer}
 %% ******************* Personal zone ******************* %%
@@ -77,6 +72,7 @@
 \frontmatter %Use lowercase Roman numerals for page numbers
 
 
+%-----------------------ALL OPTIONAL ZONE CAN BE DELETED--------------------------
 %% ******************* optional zone ******************* %%
 \include{optional/dedication}
 \include{optional/declaration}
@@ -89,37 +85,26 @@
 %% ******************* optional zone ******************* %%
 
 
-
+\include{tutorial/tutorial}  % tutorial, before start, delete it
 
 
 
 %% ******************* Contents ********************* %%
-
-\include{tutorial/tutorial}  % tutorial, before start, delete it
-
 
 \chapter{Here begins your story..}
 
 ...
 
-
-
 %% ******************* Contents ********************* %%
 
 
 
-
-
-
 %% ******************* optional zone ******************* %%
-
 \include{optional/bibliography/bibliography}
 \include{optional/references/references}
 \include{optional/Appendix/appendix}
 \include{optional/indices_of_terms}
-
 %% ******************* optional zone ******************* %%
-
 
 
 

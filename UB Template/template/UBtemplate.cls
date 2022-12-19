@@ -1,6 +1,6 @@
 
 
-\newcommand\fileversion{1.0.1}
+\newcommand\fileversion{beta.0.1}
 \newcommand\filedate{2022/12/05}
 \newcommand\fileauthor{JunjieLi & ManuelLiuWang}
 
@@ -93,7 +93,6 @@
 
 
 
-
 % ****************************** Draft Option **********************************
 \newif\ifsetDraft\setDraftfalse
 %\newif\ifsetDraftClassic\setDraftClassicfalse
@@ -151,23 +150,6 @@ supported!}
 \RequirePackage{ifpdf}    % Check for pdfLaTeX
 \RequirePackage{ifxetex}  % XeLaTeX
 
-%% *********************** Table of Contents & Appendices ***********************
-%% add Bibliography, List of figures and tables to contents
-%\RequirePackage[nottoc]{tocbibind}
-%% Add appendices
-%\RequirePackage[title,titletoc]{appendix}
-%
-%\renewcommand{\contentsname}{Table of contents}
-%\renewcommand{\listfigurename}{List of figures}
-%\renewcommand{\listtablename}{List of tables}
-%
-%% Hides Contents appearing from TOC, but adds it to bookmarks
-%\let\temptableofcontents\tableofcontents
-%\renewcommand{\tableofcontents}{
-%  \cleardoublepage
-%  \pdfbookmark[0]{\contentsname}{Contents}
-%  \temptableofcontents
-%}
 
 
 % *************************** Graphics and Figures *****************************
@@ -560,118 +542,6 @@ supported!}
 
 
 
-
-
-
-% ************************** TOC and Hide Sections *****************************
-%\newcommand{\nocontentsline}[3]{}
-%\newcommand{\tochide}[2]{
-%	\bgroup\let
-%	\addcontentsline=\nocontentsline#1{#2}
-%	\egroup}
-% Removes pagenumber appearing from TOC
-%\addtocontents{toc}{\protect\thispagestyle{empty}}
-
-
-
-
-%% ***************************** Header Formatting ******************************
-%% Custom Header with Chapter Number, Page Number and Section Numbering%
-%
-%\RequirePackage{fancyhdr} % Define custom header%
-%
-%% Style 1: Sets Page Number at the Top and Chapter/Section Name on LE/RO
-%\fancypagestyle{PageStyleI}{
-%  \renewcommand{\chaptermark}[1]{\markboth{##1}{}}
-%  \renewcommand{\sectionmark}[1]{\markright{\thesection\ ##1\ }}
-%  \fancyhf{}
-%  \fancyhead[RO]{\nouppercase \rightmark\hspace{0.25em} | 
-%    \hspace{0.25em} \bfseries{\thepage}}
-%  \fancyhead[LE]{ {\bfseries\thepage} \hspace{0.25em} | 
-%    \hspace{0.25em} \nouppercase \leftmark}
-%}
-%
-%% Style 2: Sets Page Number at the Bottom with Chapter/Section Name on LO/RE
-%\fancypagestyle{PageStyleII}{
-%  \renewcommand{\chaptermark}[1]{\markboth{##1}{}}
-%  \renewcommand{\sectionmark}[1]{\markright{\thesection\ ##1}}
-%  \fancyhf{}
-%  \fancyhead[RO]{\bfseries\nouppercase \rightmark}
-%  \fancyhead[LE]{\bfseries \nouppercase \leftmark}
-%  \fancyfoot[C]{\thepage}
-%}
-%
-%
-%% Set Fancy Header Command is defined to Load FancyHdr after Geometry is defined
-%\newcommand{\setFancyHdr}{
-%
-%\pagestyle{fancy}
-%
-%\ifPHD@pageStyleI
-%  % Style 1: Sets Page Number at the Top and Chapter/Section Name on LE/RO
-%  \pagestyle{PageStyleI}
-%
-%\else
-%  \ifPHD@pageStyleII
-%
-%  % Style 2: Sets Page Number at the Bottom with Chapter/Section Name on LO/RE
-%%  \pagestyle{PageStyleII}
-%
-%%  \else
-%  % Default Style: Sets Page Number at the Top (LE/RO) with Chapter/Section Name
-%  % on LO/RE and an empty footer
-%    \renewcommand{\chaptermark}[1]{\markboth {##1}{}}
-%    \renewcommand{\sectionmark}[1]{\markright{\thesection\ ##1}}
-%    \fancyhf{}
-%    \fancyhead[LO]{\nouppercase \rightmark}
-%    \fancyhead[LE,RO]{\bfseries\thepage}
-%    \fancyhead[RE]{\nouppercase \leftmark}
-%  \fi
-%\fi
-%}
-%
-%\setlength{\headheight}{14.5pt}
-%%\renewcommand{\headrulewidth}{0.5pt}
-%%\renewcommand{\footrulewidth}{0pt}
-%\fancypagestyle{plain}{
-%  \fancyhead{}
-%  \renewcommand{\headrulewidth}{0pt}
-%}
-%
-%% If Margin has been set (default margin print/online version)
-%\ifsetCustomMargin
-%\AtBeginDocument{
-%\@ifpackageloaded{geometry}{}{\ClassWarning{PhDThesisPSnPDF}{%
-%  Custom margin is chosen, but geometry package is not loaded. Please load the
-%  `geometry' package in the preamble.}}}
-%\else
-%\setFancyHdr % Apply fancy header settings otherwise apply it in preamble
-%\fi
-
-
-
-
-
-% **************** Clear Header Style on the Last Empty Odd pages **************
-%\renewcommand{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else%
-%	\hbox{}%
-%	\thispagestyle{empty}  % Empty header styles
-%	\newpage%
-%	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 % ******************************************************************************
 % **************************** Macro Definitions *******************************
 % ******************************************************************************
@@ -838,40 +708,6 @@ supported!}
 \end{singlespace}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-% ***************************** Chapter Mode ***********************************
-% The chapter mode allows user to only print particular chapters with references
-% All other options are disabled by default
-% To include only specific chapters without TOC, LOF, Title and Front Matter
-% To send it to supervisior for changes
-
-%\ifPHD@chapter
-%    \defineChaptertrue
-%    % Disable the table of contents, figures, tables, index and nomenclature
-%    \renewcommand{\maketitle}{}
-%    \renewcommand{\tableofcontents}{}
-%    \renewcommand{\listoffigures}{}
-%    \renewcommand{\listoftables}{}
-%    \renewcommand{\printnomencl}{}
-%    \renewcommand{\printthesisindex}{}
-%\else
-%    \defineChapterfalse
-%\fi
-
-
-
-
 
 
 % ******************** To compute empty space in title page *******************
