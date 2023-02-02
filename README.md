@@ -4,6 +4,10 @@
 
 > It can be an essay, thesis, report, or article. The template is for broad usage. Mathematical notation, matrix application, pictures, formulas, a range of word styles, and page size are all included.
 
+## Contributing
+
+constributing rules
+
 ## Authors
 
 > [@Junjie Li](https://github.com/junjielyu13), [@Manuel Liu Wang](https://github.com/TheExorcit).
