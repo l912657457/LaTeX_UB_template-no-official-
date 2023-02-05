@@ -4,11 +4,13 @@
 
 > It can be an essay, thesis, report, or article. The template is for broad usage. Mathematical notation, matrix application, pictures, formulas, a range of word styles, and page size are all included.
 
+## Resources for learning Latex
+
 ## Contributing
 
-constributing rules
+If you are interested in reporting/fixing issues and contributing directly to the code base, please see CONTRIBUTING.md for more information on what we're looking for and how to get started.
 
-## Authors
+## Contributors
 
 > [@Junjie Li](https://github.com/junjielyu13), [@Manuel Liu Wang](https://github.com/TheExorcit).
 
