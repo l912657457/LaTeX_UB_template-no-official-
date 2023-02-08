@@ -12,7 +12,7 @@ If you are interested in reporting/fixing issues and contributing directly to th
 
 ## Contributors
 
-> [@Junjie Li](https://github.com/junjielyu13), [@Manuel Liu Wang](https://github.com/TheExorcit).
+> [@Junjie Li](https://github.com/junjielyu13), [@Manuel Liu Wang](https://github.com/TheExorcit). [@ZhehanX](https://github.com/ZhehanX).
 
 ## License
 
