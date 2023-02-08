@@ -21,18 +21,45 @@ We accept issues in any language. When an issue is posted in a language besides 
 ## Pull Requests
 
 - Setting up your local environment
-    - Step 1: Fork
-    - Step 2: Build
-    - Step 3: Branch
+
+  - Step 1: Fork
+
+    Fork the project on GitHub and clone your fork locally.
+
+        $ git clone git@github.com:username/electron.git
+        $ cd electron
+        $ git remote add upstream https://github.com/electron/electron.git
+        $ git fetch upstream
+
+  - Step 2: Branch
+
+    Make sure create local branches to hold your work. These should be branched directly off of the main branch.
+
+        $ git checkout -b my-branch -t upstream/main
+
 - Making Changes
-    - Step 4: Code
-    - Step 5: Commit
-      - Commit message guidelines
-    - Step 6: Rebase
-    - Step 7: Test
-    - Step 8: Push
-    - Step 9: Opening the Pull Request
-    - Step 10: Discuss and Update
-      - Approval and Request Changes Workflow
-    - Step 11: Landing
-    - Continuous Integration Testing
+
+  - Step 3: Code
+
+  - Step 4: Commit
+
+    It is recommended to keep your changes grouped logically within individual commits. Many contributors find it easier to review changes that are split across multiple commits. There is no limit to the number of commits in a pull request.
+
+        $ git add my/changed/files
+        $ git commit
+
+    Note that multiple commits get squashed when they are landed.
+
+    - Commit message guidelines
+
+  - Step 5: Rebase
+
+  - Step 6: Push
+
+  - Step 7: Opening the Pull Request
+
+  - Step 8: Discuss and Update
+
+    - Approval and Request Changes Workflow
+
+  - Step 9: Landing
