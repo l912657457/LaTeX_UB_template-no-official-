@@ -1,0 +1,29 @@
+% Lengths in LaTex: https://www.overleaf.com/learn/latex/Lengths_in_LaTeX
+
+%% Units:
+pt:  %% a point is approximately 1/72.27 inch, that means about 0.0138 inch or 0.3515 mm (exactly point is defined as 1/864 of American printer’s foot that is 249/250 of English foot)
+mm:  %%  a millimeter
+cm:	 %%  a centimeter
+in:	 %%  inch
+ex:	 %%  roughly the height of an 'x' (lowercase) in the current font (it depends on the font used)
+em:	 %%  roughly the width of an 'M' (uppercase) in the current font (it depends on the font used)
+mu:	 %%  math unit equal to 1/18 em, where em is taken from the math symbols family
+sp:	 %%  so-called "special points", a low-level unit of measure where 65536sp=1pt
+
+
+%% Lengths are units of distance relative to some document elements. Lengths can be changed by the command:
+\setlength{\lengthname}{value_in_specified_unit}
+\baselineskip	%%  Vertical distance between lines in a paragraph 段落中行之间的垂直距离
+\columnsep	    %%  Distance between columns                       列之间的距离 
+\columnwidth	%%  The width of a column                          列的宽度
+\linewidth	    %%  Width of the line in the current environment.           当前环境中线条的宽度。
+\evensidemargin	%%  Margin of even pages, commonly used in two-sided documents such as books 偶数页边距，常用于书籍等双面文档
+\oddsidemargin	%%  Margin of odd pages, commonly used in two-sided documents such as books 奇数页边距，常用于书籍等双面文档
+\paperwidth	    %%  Width of the page                                   页面宽度
+\paperheight	%%  Height of the page                                      页面高度
+\parindent	    %%  Paragraph indentation                                    段落缩进
+\parskip	    %%  Vertical space between paragraphs                       段落之间的垂直间距
+\tabcolsep	    %%  Separation between columns in a table (tabular environment) 表中各列之间的分隔（表格环境）
+\textheight	    %%  Height of the text area in the page         页面中文本区域的高度
+\textwidth      %% 	Width of the text area in the page          页面中文本区域的宽度
+\topmargin      %%	Length of the top margin                    上边距的长度

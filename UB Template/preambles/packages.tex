@@ -1,0 +1,166 @@
+%% all packetge https://ctan.org/
+
+%% tapa_cover
+                                                                                                
+
+%% units
+\usepackage{siunitx}
+\usepackage{ifthen}
+\usepackage{ifpdf}
+
+
+\usepackage{lscape}   % Supports Landscape Layout
+\usepackage{setspace} % Define line spacing in paragraph
+\usepackage{calc}     % calculate vertical spacing
+
+% ************************* Conditional Statements *****************************
+\usepackage{ifthen}   % Conditional statements
+\usepackage{ifpdf}    % Check for pdfLaTeX
+\usepackage{ifxetex}  % XeLaTeX
+%% This will add the units
+%----------------------------------------------
+\newcommand{\nomunit}[1]{%
+\renewcommand{\nomentryend}{\hspace*{\fill}#1}}
+%----------------------------------------------
+
+
+%% header & footer
+\usepackage{fancyhdr} %% 页眉页脚 apply with geometry
+
+
+%% nomenclatures Grouping
+%% https://ctan.org/search?phrase=etoolbox
+\usepackage{etoolbox}
+\usepackage{makeidx}
+
+
+%% nomenclatures package
+\input{preambles/nomenclatures/pre_nomenclatures}
+
+%% glossaries package
+\input{preambles/glossaries/pre_glossaries}
+
+%% appendix
+\input{preambles/appendix/pre_appendix}
+
+%% Bibliography
+\input{preambles/bibliography/pre_bibliography}
+
+
+%% indices of terms:
+\input{preambles/indices_of_terms/pre_indices_of_terms}
+
+\input{preambles/section}
+
+
+%% 几乎必须
+\usepackage{amsmath}  %%数学公式
+\usepackage{graphicx} %%插图 
+\usepackage{xcolor}   %%颜色 
+\usepackage{array}    %%表格 
+
+%% 样式定制
+\usepackage{geometry} %%页面布局
+\usepackage{titlesec} %%页眉页脚
+\usepackage{enumitem} %%列表 
+\usepackage{footmisc} %%脚注 
+\usepackage{listings} %%抄录环境 
+\usepackage{amsthm}   %%定理环境
+\usepackage{thmtools} %%定理环境
+
+
+%% 特定领域
+\usepackage{amssymb}  %%更多公式符号
+\usepackage{ragged2e} %%段落对齐方式
+
+
+
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{setspace}
+
+
+%% 中文
+
+% 页眉和页脚
+\usepackage{fancyhdr}
+
+
+\usepackage{mathtools}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{enumerate, enumitem}
+
+\usepackage{fancyhdr, graphicx, proof, comment, multicol}
+\usepackage[none]{hyphenat}
+\usepackage{dirtytalk}
+\binoppenalty=\maxdimen
+\relpenalty=\maxdimen
+\usepackage{microtype}
+%\usepackage{mathpazo}
+\usepackage{mdframed}
+\usepackage{parskip}
+\linespread{1}
+\usepackage{subfig}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{amsfonts}
+\usepackage{minted}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{ragged2e}
+\usepackage[noend]{algpseudocode}
+\usepackage{hyperref}
+
+
+
+\newtheorem{defn0}{Definition}[section]
+\newtheorem{prop0}[defn0]{Proposition}
+\newtheorem{thm0}[defn0]{Theorem}
+\newtheorem{lemma0}[defn0]{Lemma}
+\newtheorem{corollary0}[defn0]{Corollary}
+\newtheorem{example0}[defn0]{Example}
+\newtheorem{remark0}[defn0]{Remark}
+\newtheorem{conjecture0}[defn0]{Conjecture}
+
+\newenvironment{definition}{ \begin{defn0}}{\end{defn0}}
+\newenvironment{proposition}{\bigskip \begin{prop0}}{\end{prop0}}
+\newenvironment{theorem}{\bigskip \begin{thm0}}{\end{thm0}}
+\newenvironment{lemma}{\bigskip \begin{lemma0}}{\end{lemma0}}
+\newenvironment{corollary}{\bigskip \begin{corollary0}}{\end{corollary0}}
+\newenvironment{example}{ \begin{example0}\rm}{\end{example0}}
+\newenvironment{remark}{ \begin{remark0}\rm}{\end{remark0}}
+\newenvironment{conjecture}{\begin{conjecture0}}{\end{conjecture0}}
+
+\newcommand{\defref}[1]{Definition~\ref{#1}}
+\newcommand{\propref}[1]{Proposition~\ref{#1}}
+\newcommand{\thmref}[1]{Theorem~\ref{#1}}
+\newcommand{\lemref}[1]{Lemma~\ref{#1}}
+\newcommand{\cororef}[1]{Corollary~\ref{#1}}
+\newcommand{\exref}[1]{Example~\ref{#1}}
+\newcommand{\secref}[1]{Section~\ref{#1}}
+\newcommand{\remref}[1]{Remark~\ref{#1}}
+\newcommand{\conjref}[1]{Conjecture~\ref{#1}}
+\DeclarePairedDelimiterX{\norm}[1]{\lVert}{\rVert}{#1}
+
+\usemintedstyle{vs}
+
+\addtolength{\topmargin}{-10.54448pt}
+
+
+
+
+
+
+
+\input{preambles/images}
+\input{preambles/command_prompt}
+
+
+
+% The emptypage package prevents page numbers and
+% headings from appearing on empty pages.
+\usepackage{emptypage}
+
+\usepackage{booktabs} % For professional looking tables
+\usepackage{multirow}

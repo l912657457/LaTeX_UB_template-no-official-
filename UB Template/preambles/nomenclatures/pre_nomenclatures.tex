@@ -1,0 +1,51 @@
+%% ********************************************************* %%
+%%                                                           %%
+%%                       NOMENCLATURES                       %%
+%%                                                           %%
+%% ********************************************************* %%
+
+%% https://www.overleaf.com/learn/latex/Nomenclatures
+%% https://ctan.org/pkg/nomencl
+\usepackage[intoc]{nomencl}
+
+
+%-------------------------------Basic commands--------------------------------
+\makenomenclature
+
+% \nomenclature[⟨prefix ⟩]{⟨symbol⟩}{⟨description⟩}
+% ⟨prefix ⟩ is used for fine tuning the sort order.
+% ⟨symbol⟩ is the symbol you want to describe.
+% ⟨description⟩ is the actual description.
+
+% \printnomenclature 
+% Put it at the place you want to have your nomenclature list.
+
+%----------------------------------Referencing--------------------------------
+% \nomrefeq % The phrase “, see equation (⟨eq⟩)” is appended to every entry in the nomenclature where ⟨eq⟩ is the number of the last equation in front of the corresponding command \nomenclature.
+
+% \nomrefpage % Same as nomrefeq but for pages.
+
+% \nomrefeqpage % Same as nomrefeq but for equations and pages
+
+% \nomenclature{$a$}{The number of angels per unit area\nomrefeqpage}%
+% \nomenclature{$N$}{The number of angels per needle point\nomrefeq}%
+% \nomenclature{$A$}{The area of the needle point\nomrefeq\nomrefpage}%
+
+% a The number of angels per unit area, see equation (1), page 1
+% N The number of angels per needle point, see equation (1)
+% A The area of the needle point, see equation (1), page 1
+
+%------------------------Formatting Nomenclature------------------------------
+% \printnomenclature % Change the label dimension,  you can use \printnomenclature[0.5in] instead of the simple \printnomenclature.
+
+% \nomname % In case you don’t like the name of the nomenclature, just redefine the \nomname, e.g. \renewcommand{\nomname}{List of Symbols}
+
+% \nomgroup % same as nomname but for group
+
+% \nompreamble % same as nomname but for preamble
+
+% \nomitemsep % adjust the skip between two entries
+
+% \nomprefix  % redifine  the default prefix that is used for the sortkeys
+
+

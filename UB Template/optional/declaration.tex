@@ -1,0 +1,34 @@
+
+% ******************************* Declaration **********************************
+% The declaration environment puts a large, bold, centered
+% "Declaration" label at the top of the page.
+\newenvironment{declaration}{
+    \clearpage % \cleardoublepage
+    \setsinglecolumn
+    
+    \addcontentsline{toc}{chapter}{Declaration}
+    \chapter*{\centering \Large Declaration}
+    
+    \thispagestyle{plain}
+}
+
+
+
+%{
+%    \flushright
+%    \@author{}\\
+%    \@degreedate{}
+%    \vfill
+%}
+
+
+\begin{declaration}
+
+
+
+I hereby declare that ...
+
+
+
+
+\end{declaration}

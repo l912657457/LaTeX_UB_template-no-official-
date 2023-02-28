@@ -1,0 +1,33 @@
+% ****************************** Acknowledgements ********************************
+% The acknowledgements environment puts a large, bold, centered
+% "Acknowledgements" label at the top of the page.
+
+\newenvironment{acknowledgements}{
+    \clearpage %\cleardoublepage
+    \setsinglecolumn
+    
+    \addcontentsline{toc}{chapter}{Acknowledgements}
+    \chapter*{\centering \Large Acknowledgements}
+    
+    \thispagestyle{plain}
+}
+
+
+
+
+\begin{acknowledgements}
+
+
+
+
+
+
+And I would like to acknowledge ...
+
+
+
+
+
+
+
+\end{acknowledgements}
