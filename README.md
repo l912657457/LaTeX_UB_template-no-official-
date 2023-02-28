@@ -4,7 +4,9 @@
 
 > It can be an essay, thesis, report, or article. The template is for broad usage. Mathematical notation, matrix application, pictures, formulas, a range of word styles, and page size are all included.
 
-## Resources for learning Latex
+## Get start
+
+#### [Overleaf template](https://www.overleaf.com/latex/templates/ub-template-no-official/rzzyghdkypfx)
 
 ## Contributing
 
@@ -12,10 +14,10 @@ If you are interested in reporting/fixing issues and contributing directly to th
 
 ## Contributors
 
-> [@Junjie Li](https://github.com/junjielyu13), [@Manuel Liu Wang](https://github.com/TheExorcit). [@ZhehanX](https://github.com/ZhehanX). 
->
+> [@Junjie Li](https://github.com/junjielyu13), [@Manuel Liu Wang](https://github.com/TheExorcit). [@ZhehanX](https://github.com/ZhehanX).
 
 ## Community
+
 Info on reporting bugs, getting help, finding third-party tools and sample apps, and more can be found on the Community page.
 
 ## License
